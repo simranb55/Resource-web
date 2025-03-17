@@ -29,13 +29,15 @@
     <section class="home-page" id="home">
 
         <div class="video-background">
-            <video autoplay loop muted width="100%"> 
+            <video autoplay loop muted width="100%" class="video-background-scale"> 
                 <source src="video/Homepage background.mp4" type="video/mp4">
             </video>
         </div>
         
         <h1>Preset Downloads!</h1>
-        <p>Get free motion presets just with a quick download! <br> Works for all After Effects Versions<br>Works for Windows & iOS </p>
+        <p>A preset is a 'pre-made' effect and/or animation which users can apply to layers in their project,<br>it can efficiently save time by instantly adding motions!</p>
+        <p>Get free motion presets just with a quick download!</p>
+        <p id="version"> Works for all After Effects Versions<br>Works for Windows & iOS </p>
         <button id="scrollbutton">Click To Get Started</button>
 
     </section>
@@ -158,7 +160,8 @@
                     <video class="video" id="Transitions" autoplay loop muted>
                         <source src="video/Zoom out.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Extract the zip file.<br>Place Zoom out part 1 on your first clip and part 2 on the second clip.<br>You may need to adjust the keyframes to fit on your layer (click "U" to see the keyframe location). <br><br>Here is the download link!</p> 
+                    <p class="popup-text">Extract the zip file.<br>Refer to the tutorial for steps on importing the preset into After Effects.<br>Apply the 'Zoom out part 1' preset to the first layer and 'part 2' to the second layer.<br>You may need to adjust the keyframes for the preset to fit the layer (press "U" to view the keyframe position).<br>For the first layer (Preset Part 1), ensure the second keyframe is at the end of the layer. For the second layer (Preset Part 2), ensure the first keyframe is at the start of the layer.<br><br>Click to download!</p> 
+                
                 </div>
 
            
@@ -169,35 +172,35 @@
                     <video class="video" id="Transitions" autoplay loop muted>
                         <source src="video/Zoom in.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the <br>Download link!---!!</p> 
+                    <p class="popup-text">Extract the zip file.<br>Refer to the tutorial for steps on importing the preset into After Effects.<br>Apply the 'Zoom in part 1' preset to the first layer and 'part 2' to the second layer.<br>You may need to adjust the keyframes for the preset to fit the layer (press "U" to view the keyframe position).<br>For the first layer (Preset Part 1), ensure the second keyframe is at the end of the layer. For the second layer (Preset Part 2), ensure the first keyframe is at the start of the layer.<br><br>Click to download!</p> 
                 </div>
 
                 <div class="video-item" data-video="Transitions" data-link="Presets/Rotate right part 1 & 2.zip">
                     <video class="video" id="Transitions" autoplay loop muted>
                         <source src="video/Rotate right.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Extract the zip file.<br>Refer to the tutorial for steps on importing the preset into After Effects.<br>Apply the 'Rotate right part 1' preset to the first layer and 'part 2' to the second layer.<br>You may need to adjust the keyframes for the preset to fit the layer (press "U" to view the keyframe position).<br>For the first layer (Preset Part 1), ensure the second keyframe is at the end of the layer. For the second layer (Preset Part 2), ensure the first keyframe is at the start of the layer.<br><br>Click to download!</p> 
                 </div>
 
                 <div class="video-item" data-video="Transitions" data-link="Presets/Rotate left part 1 & 2.zip">
                     <video class="video" id="Transitions" autoplay loop muted>
                         <source src="video/Rotate left.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Extract the zip file.<br>Refer to the tutorial for steps on importing the preset into After Effects.<br>Apply the 'Rotate left part 1' preset to the first layer and 'part 2' to the second layer.<br>You may need to adjust the keyframes for the preset to fit the layer (press "U" to view the keyframe position).<br>For the first layer (Preset Part 1), ensure the second keyframe is at the end of the layer. For the second layer (Preset Part 2), ensure the first keyframe is at the start of the layer.<br><br>Click to download!</p> 
                 </div>
 
                 <div class="video-item" data-video="Transitions" data-link="Presets/Slide right part 1 & 2.zip">
                     <video class="video" id="Transitions" autoplay loop muted>
                         <source src="video/Slide right.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Extract the zip file.<br>Refer to the tutorial for steps on importing the preset into After Effects.<br>Apply the 'Slide right part 1' preset to the first layer and 'part 2' to the second layer.<br>You may need to adjust the keyframes for the preset to fit the layer (press "U" to view the keyframe position).<br>For the first layer (Preset Part 1), ensure the second keyframe is at the end of the layer. For the second layer (Preset Part 2), ensure the first keyframe is at the start of the layer.<br><br>Click to download!</p> 
                 </div>
 
                 <div class="video-item" data-video="Transitions" data-link="Presets/Slide left part 1 & 2.zip">
                     <video class="video" id="Transitions" autoplay loop muted>
                         <source src="video/Slide left.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Extract the zip file.<br>Refer to the tutorial for steps on importing the preset into After Effects.<br>Apply the 'Slide left part 1' preset to the first layer and 'part 2' to the second layer.<br>You may need to adjust the keyframes for the preset to fit the layer (press "U" to view the keyframe position).<br>For the first layer (Preset Part 1), ensure the second keyframe is at the end of the layer. For the second layer (Preset Part 2), ensure the first keyframe is at the start of the layer.<br><br>Click to download!</p> 
                 </div>
 
                 <!-- COLOURING OVERLAYS -->
@@ -205,8 +208,10 @@
                     <video class="video" id="Colouring_Overlay" autoplay loop muted>
                         <source src="video/Colouring Overlay 1.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Create a black solid (Layer > New > Solid > Colour: Black).<br>Place the solid layer on top of what you wish to colour.<br>Drag and drop the preset on the black solid.<br>To set the blending mode; Right click on the black solid layer > Blending mode > Screen.
-                        <br>Download link!</div>
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a black solid (Layer > New > Solid > Colour: Black).<br>Place the solid layer above the layer you want to colour and adjust its length to match the layer below.<br>Drag and drop the preset onto the black solid layer.<br>To set the blending mode, right-click on the black solid layer > Blending Mode > Screen.<br>Feel free to adjust the hue and/or opacity in the Effect Controls!
+                        <br><br>Click to download! </p>
+                    
+                </div>
 
 
 
@@ -214,121 +219,143 @@
                     <video class="video" id="Colouring_Overlay" autoplay loop muted>
                         <source src="video/Colouring Overlay 2.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a black solid (Layer > New > Solid > Colour: Black).<br>Place the solid layer above the layer you want to colour and adjust its length to match the layer below.<br>Drag and drop the preset onto the black solid layer.<br>To set the blending mode, right-click on the black solid layer > Blending Mode > Screen.<br>Feel free to adjust the hue and/or opacity in the Effects Controls!
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Colouring_Overlay" data-link="Presets/Colouring Overlay 3.ffx">
                     <video class="video" id="Colouring_Overlay" autoplay loop muted>
                         <source src="video/Colouring Overlay 3.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a black solid (Layer > New > Solid > Colour: Black).<br>Place the solid layer above the layer you want to colour and adjust its length to match the layer below.<br>Drag and drop the preset onto the black solid layer.<br>To set the blending mode, right-click on the black solid layer > Blending Mode > Screen.<br>Feel free to adjust the hue and/or opacity in the Effects Controls!
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Colouring_Overlay" data-link="Presets/Colouring Overlay 4.ffx">
                     <video class="video" id="Colouring_Overlay" autoplay loop muted>
                         <source src="video/Colouring Overlay 4.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a black solid (Layer > New > Solid > Colour: Black).<br>Place the solid layer above the layer you want to colour and adjust its length to match the layer below.<br>Drag and drop the preset onto the black solid layer.<br>To set the blending mode, right-click on the black solid layer > Blending Mode > Screen.<br>Feel free to adjust the hue and/or opacity in the Effects Controls!
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Colouring_Overlay" data-link="Presets/Colouring Overlay 5.ffx">
                     <video class="video" id="Colouring_Overlay" autoplay loop muted>
                         <source src="video/Colouring Overlay 5.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a black solid (Layer > New > Solid > Colour: Black).<br>Place the solid layer above the layer you want to colour and adjust its length to match the layer below.<br>Drag and drop the preset onto the black solid layer.<br>To set the blending mode, right-click on the black solid layer > Blending Mode > Screen.<br>Feel free to adjust the hue and/or opacity in the Effects Controls!
+                        <br><br>Click to download! </p>
                 </div>
+
+
 
                 <!-- TEXT ANIMATIONS -->
                 <div class="video-item" data-video="Text_Animations" data-link="Presets/Text Animation 1.ffx">
                     <video class="video" id="Text_Animations" autoplay loop muted>
                         <source src="video/Text Animation 1.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a text layer (Layer > New > Text) and enter the desired text.<br>Ensure that the Current Time Indicator (the blue line) is at the beginning of the text layer.<br>Drag and drop the preset onto the text layer.
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Text_Animations" data-link="Presets/Text Animation 2.ffx">
                     <video class="video" id="Text_Animations" autoplay loop muted>
                         <source src="video/Text Animation 2.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a text layer (Layer > New > Text) and enter the desired text.<br>Ensure that the Current Time Indicator (the blue line) is at the beginning of the text layer.<br>Drag and drop the preset onto the text layer.
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Text_Animations" data-link="Presets/Text Animation 3.ffx">
                     <video class="video" id="Text_Animations" autoplay loop muted>
                         <source src="video/Text Animation 3.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a text layer (Layer > New > Text) and enter the desired text.<br>Ensure that the Current Time Indicator (the blue line) is at the beginning of the text layer.<br>Drag and drop the preset onto the text layer.
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Text_Animations" data-link="Presets/Text Animation 4.ffx">
                     <video class="video" id="Text_Animations" autoplay loop muted>
                         <source src="video/Text Animation 4.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a text layer (Layer > New > Text) and enter the desired text.<br>Ensure that the Current Time Indicator (the blue line) is at the beginning of the text layer.<br>Drag and drop the preset onto the text layer.
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Text_Animations" data-link="Presets/Text Animation 5.ffx">
                     <video class="video" id="Text_Animations" autoplay loop muted>
                         <source src="video/Text Animation 5.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a text layer (Layer > New > Text) and enter the desired text.<br>Ensure that the Current Time Indicator (the blue line) is at the beginning of the text layer.<br>Drag and drop the preset onto the text layer.
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Text_Animations" data-link="Presets/Text Animation 6.ffx">
                     <video class="video" id="Text_Animations" autoplay loop muted>
                         <source src="video/Text Animation 6.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a text layer (Layer > New > Text) and enter the desired text.<br>Ensure that the Current Time Indicator (the blue line) is at the beginning of the text layer.<br>Drag and drop the preset onto the text layer.
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Text_Animations" data-link="Presets/Text Animation 7.ffx">
                     <video class="video" id="Text_Animations" autoplay loop muted>
                         <source src="video/Text Animation 7.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a text layer (Layer > New > Text) and enter the desired text.<br>Ensure that the Current Time Indicator (the blue line) is at the beginning of the text layer.<br>Drag and drop the preset onto the text layer.
+                        <br><br>Click to download! </p>
                 </div>
 
                 <div class="video-item" data-video="Text_Animations" data-link="Presets/Text Animation 8.ffx">
                     <video class="video" id="Text_Animations" autoplay loop muted>
                         <source src="video/Text Animation 8.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a text layer (Layer > New > Text) and enter the desired text.<br>Ensure that the Current Time Indicator (the blue line) is at the beginning of the text layer.<br>Drag and drop the preset onto the text layer.
+                        <br><br>Click to download! </p>
                 </div>
+
+
+
 
                 <!-- PARTICLE PRESETS -->
                 <div class="video-item" data-video="Particles" data-link="Presets/Particles 1.ffx">
                     <video class="video" id="Particles" autoplay loop muted>
                         <source src="video/Particles 1.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a solid layer (Layer > New > Solid).<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the solid layer.<br>Drag and drop the preset onto the solid layer.<br>If you want the preset set as an overlay, place the solid layer above your main layer.<br>If you want it set as a background element, place the solid layer below the main layer.
+                        <br><br>Click to download! </p></p>
                 </div>
 
                 <div class="video-item" data-video="Particles" data-link="Presets/Particles 2.ffx">
                     <video class="video" id="Particles" autoplay loop muted>
                         <source src="video/Particles 2.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a solid layer (Layer > New > Solid).<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the solid layer.<br>Drag and drop the preset onto the solid layer.<br>If you want the preset set as an overlay, place the solid layer above your main layer.<br>If you want it set as a background element, place the solid layer below the main layer.
+                        <br><br>Click to download! </p></p>
                 </div>
                
                 <div class="video-item" data-video="Particles" data-link="Presets/Particles 3.ffx">
                     <video class="video" id="Particles" autoplay loop muted>
                         <source src="video/Particles 3.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a solid layer (Layer > New > Solid).<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the solid layer.<br>Drag and drop the preset onto the solid layer.<br>If you want the preset set as an overlay, place the solid layer above your main layer.<br>If you want it set as a background element, place the solid layer below the main layer.
+                        <br><br>Click to download! </p></p>
                 </div>
 
                 <div class="video-item" data-video="Particles" data-link="Presets/Particles 4.ffx">
                     <video class="video" id="Particles" autoplay loop muted>
                         <source src="video/Particles 4.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a solid layer (Layer > New > Solid).<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the solid layer.<br>Drag and drop the preset onto the solid layer.<br>If you want the preset set as an overlay, place the solid layer above your main layer.<br>If you want it set as a background element, place the solid layer below the main layer.
+                        <br><br>Click to download! </p></p>
                 </div>
 
                 <div class="video-item" data-video="Particles" data-link="Presets/Particles 5.ffx">
                     <video class="video" id="Particles" autoplay loop muted>
                         <source src="video/Particles 5.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Create a solid layer (Layer > New > Solid).<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the solid layer.<br>Drag and drop the preset onto the solid layer.<br>If you want the preset set as an overlay, place the solid layer above your main layer.<br>If you want it set as a background element, place the solid layer below the main layer.
+                        <br><br>Click to download! </p></p>
                 </div>
 
 
@@ -338,63 +365,73 @@
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 1.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
+                    </p>                
                 </div>
 
                 <div class="video-item" data-video="Effects_Other" data-link="Presets/Effect 2.ffx">
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 2.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
                 </div>
 
                 <div class="video-item" data-video="Effects_Other" data-link="Presets/Effect 3.ffx">
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 3.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
                 </div>
 
                 <div class="video-item" data-video="Effects_Other" data-link="Presets/Effect 4.ffx">
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 4.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
                 </div>
 
                 <div class="video-item" data-video="Effects_Other" data-link="Presets/Effect 5.ffx">
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 5.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
                 </div>
 
                 <div class="video-item" data-video="Effects_Other" data-link="Presets/Effect 6.ffx">
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 6.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
                 </div>
 
                 <div class="video-item" data-video="Effects_Other" data-link="Presets/Effect 7.ffx">
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 7.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
                 </div>
 
                 <div class="video-item" data-video="Effects_Other" data-link="Presets/Effect 8.ffx">
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 8.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
                 </div>
 
                 <div class="video-item" data-video="Effects_Other" data-link="Presets/Effect 9.ffx">
                     <video class="video" id="Effects_Other" autoplay loop muted>
                         <source src="video/Effect 9.mp4" type="video/mp4">
                     </video>
-                    <p class="popup-text">Here is the Download link!!!</p> 
+                    <p class="popup-text">Refer to the tutorial for steps on importing the preset into After Effects.<br>Ensure the designated layer is on the timeline.<br>For this effect to work, pre-compose your layer (Right-click > Pre-compose, select 'Move all attributes into the new composition' and 'Adjust composition duration...').<br>Ensure the Current Time Indicator (the blue line) is at the beginning of the pre-composed layer.<br>Drag and drop the preset onto the pre-composed layer.
+                        <br><br>Click to download!</p>
                 </div>
 
     

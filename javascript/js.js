@@ -67,13 +67,11 @@ $(document).ready(function() {
 
     
         let fileName = fileLink ? fileLink.split("/").pop() : ""; // this is so the file name is not "download"
-
         
         $(this).find(".popup-text").hide();
 
         $("#popup").fadeIn();
         $("#popup-video").attr("src", videoSrc)[0].play();
-        
         $("#popup-text").html(textForVideo); 
 
 
@@ -109,6 +107,7 @@ $(document).ready(function() {
 //TUTORIAL PAGE FONCTIONS
 
 //slider function
+//the steps
 
 $(document).ready(function() {
     let currentIndex = 0;
@@ -138,5 +137,8 @@ $(document).ready(function() {
     updateSlider();
 });
 
+
+
+  
 
 

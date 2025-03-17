@@ -8,6 +8,7 @@ body {
     
 }
 
+
 /*
 header {
     background: #ffffff;
@@ -72,16 +73,17 @@ html{
 .home-page {
     position: relative; 
     width: 100%;
-    height: 95vh;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    bottom: 0;
    
     margin: 0;
     padding: 0;
-    overflow: hidden;      /* Ensure no overflow */
+    overflow: hidden;    
     
 
 
@@ -91,15 +93,27 @@ html{
 
 }
 
-
-.video-background {
+/*
+.video-background  {
     position: absolute;
     width: 100%;           
-    height: 100vh;         
+    height: 100%;         
     z-index: -1;
-    overflow: hidden;      
-    object-fit: cover;    
-                  
+    overflow: hidden;    
+    object-fit: cover; 
+                      
+}*/
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*this methid helps the video fit the while screen even when resized*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 
 
@@ -124,9 +138,18 @@ html{
     font-weight: 400;
     font-style: normal;
     bottom: 40px;
+
+    top: 0px;
+    left: 0px;
 }
 
-
+#version{
+    font-size: 15px;
+    text-align: right;
+    left: 600px;
+    top: 150px;
+    
+}
 
 .home-page button {
     position: relative;
@@ -139,12 +162,15 @@ html{
     top: 30px;
 
     font-family: "sofia-pro-soft", sans-serif;
+
+    cursor: pointer;
 }
 
 .home-page button:hover {
     background-color: #cdb0ec;
     border: #6b4597;
 }
+
 
 
 /* HOMEPAGE FOOTER */
@@ -228,6 +254,7 @@ html{
 
 .slider-item .steps.show {
     display: block;
+    
 }
 
 
@@ -244,6 +271,8 @@ html{
     position: absolute;
     top: 170px;
     transform: translateY(-50%);
+
+    cursor: pointer;
 }
 
 
@@ -318,7 +347,7 @@ html{
 
 .preset-page h1 {
     position: relative;
-    margin: 0;
+    
     padding: 15px 0; 
     left: 280px;
     color: #6b4597;
@@ -372,11 +401,15 @@ html{
     font-family: "sofia-pro-soft", sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    
 }
 
 /*position: -webkit-sticky; ?????*/ 
 
-
+.filter-option{
+    cursor: pointer;
+}
 
 #filter-menu h2 {
     margin-top: 0;
@@ -385,6 +418,8 @@ html{
 #filter-menu label {
     display: block;
     margin: 10px 0;
+    cursor: pointer;
+    
 }
 
 #filter-menu button {
@@ -399,6 +434,8 @@ html{
 
 #filter-menu button:hover{
     background-color: #6d5688;
+
+    cursor: pointer;
 }
 
 /* video content */
@@ -416,19 +453,18 @@ html{
 
 .video-item {
     margin: -40; 
-    padding: 60; 
-   
+    padding: 60;  
 }
-
 
 .video {
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 .video-item:hover video {
     transform: scale(1.1);
+
+    cursor: pointer;
 }
 
 /* POPUP */
@@ -437,11 +473,18 @@ html{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 110%;
     height: 100%;
     background: rgba(47, 29, 54, 0.8);   /*the background background (to click out of)*/
     justify-content: center;
     align-items: center;
+    
+}
+
+.popup video {
+    width: 50%;
+    max-height: 100%;
+    border-radius: 10px;
 }
 
 .popup-content {
@@ -454,40 +497,33 @@ html{
     gap: 40px;
     background: #ffffff;
     padding: 20px;
-    border-radius: 10px;
+    
+    
 }
 
-.popup video {
-    width: 50%;
-    max-height: 100%;
-    border-radius: 10px;
-}
 
 /* popup textbox */
 #popup-text {
     position: relative;
-    width: 400%;
-    height: 250px;
+    min-width: 340px; 
+    max-width: 100%; 
+    height: fit-content;
     padding: 20px;
-    font-size: 15px;
     border: 1px solid #000000;
     border-radius: 5px;
-    resize: none;
     background: #ffffff;
     color: #000000;
+
     left: 30px;
     bottom: 20px;
 
+    font-size: 15px;
     font-family: "sofia-pro-soft", sans-serif;
     font-weight: 400;
     font-style: normal;
 
-    /*this is for the line breaks to work*/
-    display: block; 
-    white-space: pre-wrap; 
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
+
 
 
 
@@ -499,10 +535,14 @@ html{
     color: black;
     background-color: lavender;
     border-radius: 10px;
-    width: 50%;
-    top: 150px;
-    right: 190px;
+    min-width: 100px;
+
+    top: 200px;
+    right: 250px;
+
     font-family: "sofia-pro-soft", sans-serif;
+
+    cursor: pointer;
 
 }
 
