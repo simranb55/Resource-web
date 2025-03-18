@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "sofia-pro-soft", sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,6 +21,7 @@ header {
 
 html{
     scroll-behavior: smooth;
+
 }
 
 .nav {
@@ -54,26 +55,13 @@ html{
     font-size: 80px;
     margin-bottom: 20px;
 }
-
-.home-page button {
-    background-color: #8960b7;
-    font-size: 20px;
-    padding: 15px 20px;
-    border: none;
-    color: #fff;
-    border-radius: 10px;
-}
-
-.home-page button:hover {
-    background-color: #cdb0ec;
-    border: #6b4597;
-} */
+ */
 
 /* HOME PAGE */
 .home-page {
     position: relative; 
     width: 100%;
-    height: 95%;
+    height: 110%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,9 +102,22 @@ html{
     width: auto;
     height: auto;
     object-fit: cover;
+    opacity: 60%;
+    background-color: #000000;
+    z-index: 1;
+    
 }
 
 
+.homepage-solid{
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(0, 0, 0);
+    z-index: -1px;
+  
+   
+}
 
 
 
@@ -127,7 +128,10 @@ html{
     font-family: "sofia-pro-soft", sans-serif;
     font-weight: 700;
     font-style: normal;
-    bottom: 40px;
+    bottom: 20px;
+    z-index: 1;
+
+
 }
 
 .home-page p {
@@ -135,25 +139,24 @@ html{
     font-size: 20px;
     text-align: center;
     font-family: "sofia-pro-soft", sans-serif;
-    font-weight: 400;
+    font-weight: 0;
     font-style: normal;
-    bottom: 40px;
+    bottom: 30px;
 
-    top: 0px;
+    
     left: 0px;
+    z-index: 1;
 }
 
 #version{
-    font-size: 15px;
-    text-align: right;
-    left: 600px;
-    top: 150px;
+    font-size: 12px;
+
     
 }
 
 .home-page button {
     position: relative;
-    background-color: #b58fe1;
+    background-color: #6b4597;
     font-size: 20px;
     padding: 15px 20px;
     border: none;
@@ -164,44 +167,59 @@ html{
     font-family: "sofia-pro-soft", sans-serif;
 
     cursor: pointer;
+
+    z-index: 1;
 }
 
 .home-page button:hover {
     background-color: #cdb0ec;
     border: #6b4597;
+    ;
 }
 
 
 
-/* HOMEPAGE FOOTER */
-
 #homepage-footer {
-    height: 110px;
+    height: 5px;
     width: 100%;
     
     background-color: #a187c0; 
-   /* background: linear-gradient(transparent 20%, white);   */
     text-align: center;
-    line-height: 100px; 
-    position: relative;
-    
+    position: relative;  
 }
+   
+
     
 
 
 
 /* TUTORIAL PAGE */
 
-
+/*
 .tutorial-page {
     background-color: #000000;
-    height: 700px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     text-align: center;
 }
+*/
+
+.tutorial-page {
+    background-color: #000000;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+
 
 /* slider bar */
 .slider-container {
@@ -214,12 +232,21 @@ html{
 
 .tutorial-text{
     position: relative;
-    bottom: 100px;
-    right: 20px;
+    bottom: 90px;
+    right: 30px;
     width: 110%;
-    font-size: 20px;
+    font-size: 30px;
     
 }
+
+#version2{
+    position: relative;
+    font-size: 12px;
+    bottom: 20px;
+
+    
+}
+
 
 /* the image slider 
 
@@ -230,17 +257,18 @@ html{
     align-items: center;
 }
 */
+
 .slider-item img {
     width: 100%;
     height: auto;
 }
 
 .slider-item {
-    position: relative;  /* Make sure the parent container has relative positioning */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    bottom: 30px;
+    bottom: 60px;
 }
 
 .steps {
@@ -261,7 +289,7 @@ html{
 
 /* Left and right buttons */
 .tutorial-button {
-    background-color: #00000080;
+    background-color: #6b4597;
     color: white;
     border: none;
     padding: 10px;
@@ -269,71 +297,52 @@ html{
     border-radius: 5px;
     z-index: 10;
     position: absolute;
-    top: 170px;
+    top: 230px;
     transform: translateY(-50%);
 
     cursor: pointer;
+
+
 }
 
 
 .tutorial-button:hover {
-    background-color: #a787becc;
+    background-color: #a187c0;
+    
 }
 
 
 .prev {
     left: -80px;
-}
 
+}
 .next {
     right: -80px;
 }
 
 
-
-
-/*
-#header3{
-    background-color: #ccb4ea; 
-    padding: 40px;
-    text-align: center;
-}
-
-.nav3 h1{
-    display: flex;
-    justify-content: left;
-    gap: 30px;
-    margin-top: 10px;
-}
-
-
-.tutorial-page {
-    background-color: #000000;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-
-
 #tutorialpage-footer{
-    height: 100px;
+    height: 5px;
     width: 100%;
+    
     background-color: #a187c0; 
     text-align: center;
-    line-height: 100px;
-    color: white;
-}  
+    position: relative;
+} 
+
+
+
+
+
+
 
 */
 
 
 
 /* PRESET PAGE */
+
+
 
 .preset-page {
     background-color: #ffffff;
@@ -343,16 +352,19 @@ html{
     flex-direction: column;
     align-items: flex-start; 
     width: 100%;
+
+    
 }
 
 .preset-page h1 {
     position: relative;
     
-    padding: 15px 0; 
-    left: 280px;
+    margin: 10px;
+    left: 290px;
     color: #6b4597;
     top: 10px;
 
+    font-size: 50px;
     font-family: "sofia-pro-soft", sans-serif;
     font-weight: 550;
 }
@@ -364,8 +376,8 @@ html{
     font-weight: 400;
     font-size: 20px;
     bottom: 40px;
-    left: 300px;
-    margin-bottom: 10px;
+    left: 290px;
+    margin-bottom: 30px;
 
 }
 
@@ -401,6 +413,7 @@ html{
     font-family: "sofia-pro-soft", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
 
     
 }
@@ -413,27 +426,32 @@ html{
 
 #filter-menu h2 {
     margin-top: 0;
+    color: 6b4597;
 }
 
 #filter-menu label {
     display: block;
     margin: 10px 0;
     cursor: pointer;
+    color: 6b4597;
     
 }
 
 #filter-menu button {
+    position: relative;
     margin-top: 10px;
     padding: 10px;
-    background: #000000;
+    background: #6b4597;
     color: white;
     border: none;
     cursor: pointer;
+
+    font-family: "sofia-pro-soft", sans-serif;
 }
 
 
 #filter-menu button:hover{
-    background-color: #6d5688;
+    background-color: #6b4597;
 
     cursor: pointer;
 }
@@ -478,13 +496,14 @@ html{
     background: rgba(47, 29, 54, 0.8);   /*the background background (to click out of)*/
     justify-content: center;
     align-items: center;
+    z-index: 1;
     
 }
 
 .popup video {
     width: 50%;
     max-height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .popup-content {
@@ -521,10 +540,9 @@ html{
     font-family: "sofia-pro-soft", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
 
 }
-
-
 
 
 
@@ -532,13 +550,15 @@ html{
 
 #close-popup{
     position: relative;
-    color: black;
-    background-color: lavender;
+    color: white;
+    background-color: #6b4597;
     border-radius: 10px;
-    min-width: 100px;
+    min-width: 90px;
+    border: none;
+    padding: 4px;
 
     top: 200px;
-    right: 250px;
+    right: 240px;
 
     font-family: "sofia-pro-soft", sans-serif;
 
@@ -546,7 +566,42 @@ html{
 
 }
 
+#close-popup:hover {
+    background-color: #cdb0ec;
+   
 
+}
+
+
+
+
+#scrollbutton2 {
+    position: relative;
+    background-color: #6b4597;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    top: 75px;
+
+  
+    left: 90%;
+    transform: translateX(-50%);
+
+    font-family: "sofia-pro-soft", sans-serif;
+    cursor: pointer;
+    z-index: 1;
+
+
+    margin: -20;
+}
+
+
+#scrollbutton2:hover {
+    background-color: #cdb0ec;
+    border: #6b4597;
+}
 
 
 

@@ -8,6 +8,19 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $("#scrollbutton2").click(function(){
+        $("html, body").animate({
+            scrollTop: $("#tutorial").offset().top
+        }, 50);
+    });
+});
+
+
+
+
+
+
 
 $(document).ready(function() {
     
@@ -55,7 +68,9 @@ $(document).ready(function() {
         if (fileLink) {
             $("#popup-text").append(`<br><a href="${fileLink}" download="${fileName}">${fileName}</a>`);
         }
-    });  */
+    });  
+    */
+
 
 
 // THIS VERSION WORKS FOR THR <BR> TAGS - .text is replaced with .html
@@ -90,7 +105,7 @@ $(document).ready(function() {
         }
     });
 
-    //text shows up when i click the close BUTTON
+    //text shows up when i click the CLOSE BUTTON
 
     $("#close-popup").click(function() {
         $("#popup").fadeOut();
@@ -102,6 +117,8 @@ $(document).ready(function() {
 
 
 //???  $("#popup-video")[0].pause();
+
+
 
 
 //TUTORIAL PAGE FONCTIONS
@@ -136,6 +153,10 @@ $(document).ready(function() {
     // this makes the slider work?
     updateSlider();
 });
+
+
+
+
 
 
 
